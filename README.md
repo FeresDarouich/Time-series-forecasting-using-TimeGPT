@@ -13,7 +13,7 @@ TimeGPT is trained on more than 100 billion data points all coming from open-sou
 TimeGPT uses the full encoder-decoder Transformer architecture.The inputs can consist of a window of historical data, as well as exogenous data, like punctual events or another series. 
 
 The inputs are fed to the encoder portion of the model. The attention mechanism inside the encoder then learns different properties from the inputs. This is then fed to the decoder, which uses the learned information to produce forecasts.
-Note: 
+* Note: 
 * Transfer learning is a machine learning technique where a model developed for a particular task is reused as the starting point for a model on a second task. The idea is to leverage the knowledge gained while solving one problem and apply it to a different but related problem. This approach is particularly beneficial when the second task has limited labeled data.
   
 * TimeGPT is the first foundation model for time series forecasting. It leverages the Transformer architecture and was pre-trained on 100 billion data points to make zero-shot inference on new unseen data.Combined with the technique of conformal prediction, the model can generate prediction intervals and perform anomaly detection without being trained on a specific dataset.
